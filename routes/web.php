@@ -19,7 +19,9 @@
  */
 $router->group(['prefix' => '/api'], function ($router){
     $router->get('videos', "VideosController@index");
-    $router->post('videos', "videosController@store");
+    $router->post('videos', "VideosController@store");
+    $router->get('videos/{id}', "VideosController@show");
+    $router->put('videos/{id}', "VideosController@update");
 });
 
 

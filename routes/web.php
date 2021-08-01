@@ -13,6 +13,17 @@
 |
 */
 
-$router->get('/', function () use ($router) {
-    return $router->app->version();
+
+/**
+ * Definindo um grupo de rotas coom o prefixo padrão API
+ */
+$router->group(['prefix' => '/api'], function ($router){
+
 });
+
+
+$router->get('/', function () use ($router) {
+    echo "Bem vindo ao AluraFlix -> API em desenvolvimento";
+});
+
+

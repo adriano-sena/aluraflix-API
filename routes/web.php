@@ -18,7 +18,8 @@
  * Definindo um grupo de rotas coom o prefixo padrão API
  */
 $router->group(['prefix' => '/api'], function ($router){
-
+    $router->get('videos', "VideosController@index");
+    $router->post('videos', "videosController@store");
 });
 
 

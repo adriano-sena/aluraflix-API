@@ -9,5 +9,5 @@ use Illuminate\Database\Eloquent\Model;
 class Video extends Model
 {
     public $timestamps = true;
-    public $fillable = ["titulo", "descricao", "url"];
+    protected $fillable = ["titulo", "descricao", "url"];
 }

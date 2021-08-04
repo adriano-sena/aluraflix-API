@@ -22,6 +22,7 @@ $router->group(['prefix' => '/api'], function ($router){
     $router->post('videos', "VideosController@store");
     $router->get('videos/{id}', "VideosController@show");
     $router->put('videos/{id}', "VideosController@update");
+    $router->delete('videos/{id}', 'VideosController@destroy');
 });
 
 
